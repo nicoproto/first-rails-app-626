@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FirstRailsApp626</title>
+    <title>First Rails App 626</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <div style="background: goldenrod; padding: 16px;">
+      NAV 🥭
+      <%= link_to "Home", root_path %>
+      <%= link_to "About", about_path %>
+      <%= link_to "Contact", contact_path %>
+    </div>
+
     <%= yield %>
+
+    <p>This is an amazing footer 🦶</p>
   </body>
 </html>
